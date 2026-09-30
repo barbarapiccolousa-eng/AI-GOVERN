@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI GOVERN Meeting</title>
+  <style>
+    body { width: 320px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #090d16; color: #f8fafc; margin: 0; padding: 16px; box-sizing: border-box; }
+    .header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #1f2d4a; padding-bottom: 10px; margin-bottom: 12px; }
+    .title { font-size: 13px; font-weight: bold; color: #00f0ff; letter-spacing: 0.5px; }
+    .badge { font-size: 9px; font-family: monospace; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 2px 6px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .status { font-size: 11px; color: #94a3b8; margin-bottom: 14px; font-family: monospace; }
+    .btn { width: 100%; padding: 10px; border-radius: 8px; border: none; font-size: 12px; font-weight: bold; cursor: pointer; transition: all 0.2s; margin-bottom: 8px; font-family: monospace; }
+    .btn-record { background: linear-gradient(135deg, #ec4899, #f43f5e); color: white; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3); }
+    .btn-record.recording { background: #ef4444; animation: pulse 1.5s infinite; }
+    .btn-disclaimer { background: #121a2d; color: #38bdf8; border: 1px solid #1f2d4a; font-size: 10px; }
+    .disclaimer-box { background: #0d1322; border: 1px solid #1f2d4a; border-radius: 6px; padding: 8px; font-size: 10px; color: #64748b; line-height: 1.4; margin-top: 10px; }
+    @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">🛡️ AI GOVERN NOTETAKER</div>
+    <div class="badge">ZERO-TRUST</div>
+  </div>
+  <div class="status" id="sessionStatus">🟢 Sesión lista para capturar audio</div>
+  <button class="btn btn-record" id="btnRecord">🎙️ Iniciar Grabación de Llamada</button>
+  <button class="btn btn-disclaimer" id="btnCopyDisclaimer">📋 Copiar Aviso RGPD al Chat</button>
+  <div class="disclaimer-box">
+    <strong>Aviso Deontológico:</strong> La llamada se captura localmente en el navegador sin bots participantes. El audio se transmitirá cifrado al Taller Jurídico de AI GOVERN.
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

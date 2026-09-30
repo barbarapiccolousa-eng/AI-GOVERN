@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AI GOVERN • Legal Meeting Assistant",
+  "version": "1.0.0",
+  "description": "Captura privada de audio en Google Meet y Zoom para generación de actas jurídicas en AI GOVERN.",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "https://app.zoom.us/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI GOVERN Legal Meeting"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
